@@ -1,0 +1,62 @@
+body {
+	font-family: 'Times New Roman', Times, serif;
+}
+.navbar {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: 1px solid black;
+	padding: 1.2em 1.2em;
+}
+.main-content {
+	margin: 2rem 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.shirt img {
+	width: 24rem;
+	box-sizing: border-box;
+}
+.shirt {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1% 0;
+}
+button {
+	border-radius: 10px;
+	padding: .8rem;
+	color: hsl(208, 100%, 97%);
+	background-color: hsl(0, 10%, 40%);
+	cursor: pointer;
+}
+.navbar h1,
+h2 {
+	font-size: 2.5em;
+	color: hsl(0, 10%, 40%);
+}
+.zoom {
+	position: absolute;
+	top: 12px;
+	right: 70%;
+	width: 100px;
+	animation: cart 1s forwards ease;
+}
+/* Cart Animations */
+@keyframes cart {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		right: 40px;
+	}
+}
